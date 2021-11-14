@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using ProjectForTests.Models;
 
-namespace ProjectForTests.Models
+namespace ProjectForTests.Repository
 {
     public class People
     {
@@ -27,15 +28,12 @@ namespace ProjectForTests.Models
                     MemberFromDate = new DateTime(1988, 2, 12),
                     Country = Country.Russia,
                     IsMember = true,
-                    Name = "Олеся",
-                    Description = "Инженер",
+                    Name = "Maria",
+                    Description = "Engineer",
                     Age = 38,
                     Weight = 75,
                     Gender = "F"
-                },
-                
-                // Omitted for brevity ...
-                //...more than 30 items 
+                }
             };
         }
 
@@ -66,10 +64,7 @@ namespace ProjectForTests.Models
                     Age = 12,
                     Weight = 99,
                     Gender = "M"
-                },
-               
-               // Omitted for brevity
-               // ... more than 10 item ...
+                }
             };
         }
 
@@ -77,21 +72,24 @@ namespace ProjectForTests.Models
         {
             return new List<Department>
             {
-                new Department {
-                            Id = 1,
-                            Name = "Global",
-                            Description = "Simple description number one"
-                        },
-                new Department {
-                            Id = 2,
-                            Name = "Entertaiment",
-                            Description = "Simple description number two"
-                        },
-                new Department {
-                            Id = 3,
-                            Name = "Office",
-                            Description = "Simple description number one"
-                        }
+                new Department 
+                {
+                    Id = 1,
+                    Name = "Global",
+                    Description = "Simple description number one"
+                },
+                new Department 
+                {
+                    Id = 2,
+                    Name = "Entertainment",
+                    Description = "Simple description number two"
+                },
+                new Department 
+                {
+                    Id = 3,
+                    Name = "Office",
+                    Description = "Simple description number one"
+                }
             };
         }
     }
